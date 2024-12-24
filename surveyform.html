@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 id="title">CodeCafe Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve our cafe! </p>
+            <form id="survey-form">
+                <label for="name" id="name-label" >Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+
+                <label for="number" id="number-label">Age <p> (optional)</p></label>
+                <input type="number" id="number" placeholder="Age" min="13" max="100">
+
+                <label id="dropdowm2-label" for="state">Which state food do you love the most?</label>
+                <select name="state" id="dropdown2">
+                    <option value="">North-Indian</option>
+                    <option value="">Gujrati</option>
+                    <option value="">Punjabi</option>
+                    <option value="">Marathi</option>
+                    <option value="">South-Indian</option>
+                    <option value="">Central India</option>
+                    <option value="">Bengali</option>
+                    <option value="">Western</option>
+                </select>
+
+                <div>
+                    <label for="dd" id="dd">Would you recommend our cafe to your knowns?</label>
+                    <span><input type="radio" name="dd" id="dd" value="defi">
+                        <p>Definately</p>
+                    </span>
+                    <span><input type="radio" name="dd" id="dd" value="maybe">
+                        <p>Maybe</p>
+                    </span>
+                    <span><input type="radio" name="dd" id="dd" value="ns">
+                        <p>Not sure</p>
+                    </span>
+                </div>
+
+                <label for="best" id="dd1">Which is the best food-item you love here?</label>
+                <select name="best" id="dropdown">
+                    <option value="">Burger</option>
+                    <option value="">Pizza</option>
+                    <option value="">Noodles</option>
+                    <option value="">Momos</option>
+                    <option value="">Drinks</option>
+                    <option value="">Pasta</option>
+                    <option value="">Maggie</option>
+                    <option value="">Patties</option>
+                    <option value="">South Indian</option>
+                    <option value="">Coffee</option>
+                </select>
+
+                <div>
+                    <label for="improve" id="check">What would you like to see improved? <p>(Check all that apply)</p>
+                    </label>
+                    <span>
+                        <input type="checkbox" name="imp1" value="imp1">
+                        <p>Food Quantity</p>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="imp2" value="imp2">
+                        <p>Ingredients Quality</p>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="imp3" value="imp3">
+                        <p>Interior</p>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="im4" value="imp4">
+                        <p>Decoration</p>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="imp5" value="imp5">
+                        <p>Crockrey</p>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="imp6" value="imp6">
+                        <p>Waiters</p>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="imp7" value="imp7">
+                        <p>Cooks</p>
+                    </span>
+                    <br>
+
+                    <label for="text">Any comments or Suggestions for our cafe?</label><br>
+                    <textarea name="text" placeholder="Enter your Opinions here" id="opinion" ></textarea><br>
+
+                    <div class="button">
+                        <button id="submit">Submit</button>
+                    </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
